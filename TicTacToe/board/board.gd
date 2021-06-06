@@ -14,7 +14,7 @@ func _ready():
 	get_textures()
 	innitiate_board()
 	initiate_player()
-#test
+#test.
 func _on_button_pressed():
 	if empty():
 		make_move()
