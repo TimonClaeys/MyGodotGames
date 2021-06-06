@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Box/Box.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.113725, 0.529412, 0.168627, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 77, 90 )
+
+[node name="Box" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8, 168 )
+
+[node name="Box2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 24, 168 )
+
+[node name="Box3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 40, 168 )
+
+[node name="Box4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 56, 168 )
+
+[node name="Box5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 72, 168 )
+
+[node name="Box6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 88, 168 )
+
+[node name="Box7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 104, 168 )
+
+[node name="Box8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 120, 168 )
+
+[node name="Box9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 136, 168 )
+
+[node name="Box10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 152, 168 )

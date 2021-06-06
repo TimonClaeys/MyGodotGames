@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Music.ogg-e0df701c938ecfcb01b7650d652427c1.oggstr"
+
+[deps]
+
+source_file="res://Metroidvania Resources/Metroidvania Resources/Music and Sounds/Music.ogg"
+dest_files=[ "res://.import/Music.ogg-e0df701c938ecfcb01b7650d652427c1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
