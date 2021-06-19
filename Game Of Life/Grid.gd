@@ -5,9 +5,8 @@ export var grid_color = Color.lightgray
 export var color_dead = Color.white
 export var color_alive = Color.black
 
-var first_time = true
+var generation = 0
 var grid  = []
-var grid_clone
 
 func _ready():
 	initialize_grid()
@@ -70,7 +69,7 @@ func _draw():
 
 func calculate_dead_or_alive():
 	var neigbours = 0
-	grid_clone = grid.duplicate(true)
+	var grid_clone = grid.duplicate(true)
 	for x in range(99):
 		for y in range(99):
 			for a in range(-1, 2):
