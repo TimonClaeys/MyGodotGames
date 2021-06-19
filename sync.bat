@@ -1,4 +1,4 @@
-set /p asd="Hit enter to continue"
+set /p commit="> "
 git add .
-git commit -m %asd%
+git commit -m %commit%
 git push
