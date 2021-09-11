@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Test 4"
-run/main_scene="res://World/World.tscn"
+run/main_scene="res://Tests/Test1/StaticBody2D.tscn"
 config/icon="res://icon.png"
 
 [input]

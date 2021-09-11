@@ -21,7 +21,6 @@ func _ready():
 	grid[10][12] = true
 
 func _process(delta):
-	print(get_global_mouse_position().floor())
 	if Input.is_action_pressed("add"):
 		grid[get_global_mouse_position().floor().x][get_global_mouse_position().floor().y] = true
 		update()

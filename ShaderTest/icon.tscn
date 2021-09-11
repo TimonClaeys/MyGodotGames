@@ -1,13 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
-
-[sub_resource type="Shader" id=1]
-
-[sub_resource type="ShaderMaterial" id=2]
-shader = SubResource( 1 )
+[ext_resource path="res://icon.tres" type="Material" id=2]
 
 [node name="icon" type="Sprite"]
-material = SubResource( 2 )
-position = Vector2( 847, 168 )
+material = ExtResource( 2 )
+position = Vector2( 483.04, 338.103 )
+scale = Vector2( 1.21378, 1.08864 )
 texture = ExtResource( 1 )

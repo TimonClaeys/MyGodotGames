@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://icon.vs" type="Script" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=6]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.00287356, 0.183908, 0.373563, 0.586207, 1 )
+colors = PoolColorArray( -1.#IND, -1.#IND, -1.#IND, -1.#IND, 1, 0, 0, 1, 0.424307, 0, 0, 1, 0.4, 0, 0, 1, 0.366738, 0, 0, 1, 1, 0, 0, 0.564706 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0771923, 0, 0, Vector2( 0.989218, 0.523864 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+gravity = Vector3( 0, 100, 0 )
+initial_velocity = 50.0
+angular_velocity = 160.0
+angular_velocity_random = 0.3
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 50.0
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+hue_variation = 1.0
+hue_variation_random = 0.5
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Particles2D" type="Particles2D" parent="."]
+material = SubResource( 6 )
+position = Vector2( 481, 231 )
+amount = 16
+explosiveness = 0.6
+process_material = SubResource( 5 )
+
+[node name="icon" type="Sprite" parent="."]
+position = Vector2( 711.57, 238.121 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )

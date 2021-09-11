@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="GraphEdit" type="GraphEdit"]
+margin_left = 45.0
+margin_top = 65.0
+margin_right = 882.0
+margin_bottom = 616.0
+scroll_offset = Vector2( -95, -40 )
